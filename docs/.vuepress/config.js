@@ -6,8 +6,8 @@ const sidebar_vue3_ts_config = require('./02 sidebar/web前端/vue3_ts_config')
 
 module.exports = {
     themeConfig: {
-        logo: '/images/logo.png',
         base: "/notepress/",
+        logo: '/images/logo.png',
         nav: [{
                 text: 'Home',
                 link: '/'
