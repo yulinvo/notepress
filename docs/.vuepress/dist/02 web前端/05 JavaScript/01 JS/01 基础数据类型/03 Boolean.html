@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>强制类型转换</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.aa063b0f.js" as="script"><link rel="preload" href="/assets/js/2.1c1aa85b.js" as="script"><link rel="preload" href="/assets/js/12.0ee74348.js" as="script"><link rel="prefetch" href="/assets/js/10.4c46de9a.js"><link rel="prefetch" href="/assets/js/11.a8d97c01.js"><link rel="prefetch" href="/assets/js/13.b866027d.js"><link rel="prefetch" href="/assets/js/14.c5e2c808.js"><link rel="prefetch" href="/assets/js/15.64c8895c.js"><link rel="prefetch" href="/assets/js/16.80f3faee.js"><link rel="prefetch" href="/assets/js/17.be4eda47.js"><link rel="prefetch" href="/assets/js/18.eac5af01.js"><link rel="prefetch" href="/assets/js/19.39a7b911.js"><link rel="prefetch" href="/assets/js/20.ceeef859.js"><link rel="prefetch" href="/assets/js/21.f22435fb.js"><link rel="prefetch" href="/assets/js/22.0a6345bc.js"><link rel="prefetch" href="/assets/js/23.b9c7e231.js"><link rel="prefetch" href="/assets/js/24.2a4b1ee5.js"><link rel="prefetch" href="/assets/js/25.72a6f899.js"><link rel="prefetch" href="/assets/js/26.115399be.js"><link rel="prefetch" href="/assets/js/27.344a5837.js"><link rel="prefetch" href="/assets/js/28.264b154b.js"><link rel="prefetch" href="/assets/js/29.9d42eab2.js"><link rel="prefetch" href="/assets/js/3.b05c3900.js"><link rel="prefetch" href="/assets/js/30.5adf2ce1.js"><link rel="prefetch" href="/assets/js/31.c75f816d.js"><link rel="prefetch" href="/assets/js/32.cbf9658c.js"><link rel="prefetch" href="/assets/js/33.60ec48f0.js"><link rel="prefetch" href="/assets/js/34.119a8c50.js"><link rel="prefetch" href="/assets/js/35.80ddbafe.js"><link rel="prefetch" href="/assets/js/36.3dab8737.js"><link rel="prefetch" href="/assets/js/37.b719ee47.js"><link rel="prefetch" href="/assets/js/38.5585bc24.js"><link rel="prefetch" href="/assets/js/39.b7d57341.js"><link rel="prefetch" href="/assets/js/4.b7d0708f.js"><link rel="prefetch" href="/assets/js/40.f91d6dcc.js"><link rel="prefetch" href="/assets/js/41.6855ac03.js"><link rel="prefetch" href="/assets/js/42.5db13523.js"><link rel="prefetch" href="/assets/js/43.103a1b4e.js"><link rel="prefetch" href="/assets/js/44.c024684a.js"><link rel="prefetch" href="/assets/js/45.a6513ad2.js"><link rel="prefetch" href="/assets/js/46.db9615cd.js"><link rel="prefetch" href="/assets/js/47.21c0bcc8.js"><link rel="prefetch" href="/assets/js/48.0c27eab4.js"><link rel="prefetch" href="/assets/js/49.fd360980.js"><link rel="prefetch" href="/assets/js/5.9e2f4ca7.js"><link rel="prefetch" href="/assets/js/50.179885d4.js"><link rel="prefetch" href="/assets/js/51.9215d537.js"><link rel="prefetch" href="/assets/js/52.ea569b87.js"><link rel="prefetch" href="/assets/js/6.c7b54f12.js"><link rel="prefetch" href="/assets/js/7.250efb40.js"><link rel="prefetch" href="/assets/js/8.4b31f0a9.js"><link rel="prefetch" href="/assets/js/9.19887e61.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/03 python/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/03 python/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/02 web前端/03. Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  K8S
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web前端" class="dropdown-title"><span class="title">web前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="web前端" class="mobile-dropdown-title"><span class="title">web前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML+CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-subitem"><a href="/02 web前端/10 Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  ES6~ES11
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  v2.x
+</a></li><li class="dropdown-subitem"><a href="/02 web前端/10 Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  v3.x
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="python" class="dropdown-title"><span class="title">python</span> <span class="arrow down"></span></button> <button type="button" aria-label="python" class="mobile-dropdown-title"><span class="title">python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Python入门
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Django
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  RestFramework
+</a></li></ul></li><li class="dropdown-item"><h4>
+          爬虫
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  框架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link">
+  MySql
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  MongoDB
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/03 python/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/03 python/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/02 web前端/03. Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  K8S
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web前端" class="dropdown-title"><span class="title">web前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="web前端" class="mobile-dropdown-title"><span class="title">web前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML+CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-subitem"><a href="/02 web前端/10 Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  ES6~ES11
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  v2.x
+</a></li><li class="dropdown-subitem"><a href="/02 web前端/10 Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  v3.x
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="python" class="dropdown-title"><span class="title">python</span> <span class="arrow down"></span></button> <button type="button" aria-label="python" class="mobile-dropdown-title"><span class="title">python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Python入门
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Django
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  RestFramework
+</a></li></ul></li><li class="dropdown-item"><h4>
+          爬虫
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/03 python/" class="nav-link">
+  框架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/js/" class="nav-link">
+  MySql
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  MongoDB
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="强制类型转换"><a href="#强制类型转换" class="header-anchor">#</a> 强制类型转换</h2> <blockquote><p>使用Boolean()函数转换</p></blockquote> <ul><li><p>数字 ---&gt; 布尔</p> <div class="language- extra-class"><pre class="language-text"><code>除了0和NaN，其余的都是true
+</code></pre></div></li> <li><p>字符串 ---&gt; 布尔</p> <div class="language- extra-class"><pre class="language-text"><code>除了空串，其余的都是true    		#字符串‘false’和空格转换成布尔值也是true
+</code></pre></div></li> <li><p>null和undefined都会转换为false</p></li> <li><p>对象也会转换为true</p></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.aa063b0f.js" defer></script><script src="/assets/js/2.1c1aa85b.js" defer></script><script src="/assets/js/12.0ee74348.js" defer></script>
+  </body>
+</html>
