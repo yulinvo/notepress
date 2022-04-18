@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>创建数组</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/notepress/assets/css/0.styles.d3518894.css" as="style"><link rel="preload" href="/notepress/assets/js/app.8b83ab89.js" as="script"><link rel="preload" href="/notepress/assets/js/2.8fb8c9b4.js" as="script"><link rel="preload" href="/notepress/assets/js/16.e1b879ab.js" as="script"><link rel="prefetch" href="/notepress/assets/js/10.3891bd37.js"><link rel="prefetch" href="/notepress/assets/js/11.f29f3210.js"><link rel="prefetch" href="/notepress/assets/js/12.477f3eef.js"><link rel="prefetch" href="/notepress/assets/js/13.2e04c08e.js"><link rel="prefetch" href="/notepress/assets/js/14.a46f183e.js"><link rel="prefetch" href="/notepress/assets/js/15.ed5875ec.js"><link rel="prefetch" href="/notepress/assets/js/17.1f86b17f.js"><link rel="prefetch" href="/notepress/assets/js/18.85ebc081.js"><link rel="prefetch" href="/notepress/assets/js/19.6a1d5405.js"><link rel="prefetch" href="/notepress/assets/js/20.94a3e91c.js"><link rel="prefetch" href="/notepress/assets/js/21.a34d6124.js"><link rel="prefetch" href="/notepress/assets/js/22.67dddb80.js"><link rel="prefetch" href="/notepress/assets/js/23.ee5e08e3.js"><link rel="prefetch" href="/notepress/assets/js/24.a319fc2d.js"><link rel="prefetch" href="/notepress/assets/js/25.0c7c6e4f.js"><link rel="prefetch" href="/notepress/assets/js/26.e89ad6ef.js"><link rel="prefetch" href="/notepress/assets/js/27.85519ef1.js"><link rel="prefetch" href="/notepress/assets/js/28.2bcf6eea.js"><link rel="prefetch" href="/notepress/assets/js/29.80a46580.js"><link rel="prefetch" href="/notepress/assets/js/3.bf50d524.js"><link rel="prefetch" href="/notepress/assets/js/30.9805b0b1.js"><link rel="prefetch" href="/notepress/assets/js/31.02c3732c.js"><link rel="prefetch" href="/notepress/assets/js/32.ed9d35f7.js"><link rel="prefetch" href="/notepress/assets/js/33.5e370f08.js"><link rel="prefetch" href="/notepress/assets/js/34.50bb5a9b.js"><link rel="prefetch" href="/notepress/assets/js/35.6e85a134.js"><link rel="prefetch" href="/notepress/assets/js/36.90ed7d15.js"><link rel="prefetch" href="/notepress/assets/js/37.ca305cd5.js"><link rel="prefetch" href="/notepress/assets/js/38.2752f7e3.js"><link rel="prefetch" href="/notepress/assets/js/39.2265ab16.js"><link rel="prefetch" href="/notepress/assets/js/4.7487249b.js"><link rel="prefetch" href="/notepress/assets/js/40.f3d81763.js"><link rel="prefetch" href="/notepress/assets/js/41.a7184b24.js"><link rel="prefetch" href="/notepress/assets/js/42.f3d3d7ff.js"><link rel="prefetch" href="/notepress/assets/js/43.f992e465.js"><link rel="prefetch" href="/notepress/assets/js/44.198cab78.js"><link rel="prefetch" href="/notepress/assets/js/45.1d31e5d2.js"><link rel="prefetch" href="/notepress/assets/js/46.bc8c7bd3.js"><link rel="prefetch" href="/notepress/assets/js/47.b5caa879.js"><link rel="prefetch" href="/notepress/assets/js/48.cd329439.js"><link rel="prefetch" href="/notepress/assets/js/49.0012b5ae.js"><link rel="prefetch" href="/notepress/assets/js/5.9b56b4a9.js"><link rel="prefetch" href="/notepress/assets/js/50.324e6ee9.js"><link rel="prefetch" href="/notepress/assets/js/51.fc81f641.js"><link rel="prefetch" href="/notepress/assets/js/52.916823c3.js"><link rel="prefetch" href="/notepress/assets/js/6.7001d4c1.js"><link rel="prefetch" href="/notepress/assets/js/7.dbe11ff2.js"><link rel="prefetch" href="/notepress/assets/js/8.95cb3514.js"><link rel="prefetch" href="/notepress/assets/js/9.95d62713.js">
+    <link rel="stylesheet" href="/notepress/assets/css/0.styles.d3518894.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notepress/" class="home-link router-link-active"><img src="/notepress/images/logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notepress/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notepress/js/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/notepress/03 python/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/notepress/03 python/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/notepress/02 web前端/03. Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  K8S
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web前端" class="dropdown-title"><span class="title">web前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="web前端" class="mobile-dropdown-title"><span class="title">web前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML+CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-subitem"><a href="/notepress/02 web前端/10 Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  ES6~ES11
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  v2.x
+</a></li><li class="dropdown-subitem"><a href="/notepress/02 web前端/10 Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  v3.x
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="python" class="dropdown-title"><span class="title">python</span> <span class="arrow down"></span></button> <button type="button" aria-label="python" class="mobile-dropdown-title"><span class="title">python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Python入门
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Django
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  RestFramework
+</a></li></ul></li><li class="dropdown-item"><h4>
+          爬虫
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  框架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notepress/js/" class="nav-link">
+  MySql
+</a></li><li class="dropdown-item"><!----> <a href="/notepress/python/" class="nav-link">
+  MongoDB
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notepress/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="运维" class="dropdown-title"><span class="title">运维</span> <span class="arrow down"></span></button> <button type="button" aria-label="运维" class="mobile-dropdown-title"><span class="title">运维</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notepress/js/" class="nav-link">
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/notepress/03 python/" class="nav-link">
+  Nginx
+</a></li><li class="dropdown-item"><!----> <a href="/notepress/03 python/" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/notepress/02 web前端/03. Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  K8S
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="web前端" class="dropdown-title"><span class="title">web前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="web前端" class="mobile-dropdown-title"><span class="title">web前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          HTML+CSS
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  HTML5
+</a></li><li class="dropdown-subitem"><a href="/notepress/02 web前端/10 Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  CSS3
+</a></li></ul></li><li class="dropdown-item"><h4>
+          JavaScript
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  JS
+</a></li><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  ES6~ES11
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Vue
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  v2.x
+</a></li><li class="dropdown-subitem"><a href="/notepress/02 web前端/10 Vue3+TS 快速上手/00_课程介绍.html" class="nav-link">
+  v3.x
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="python" class="dropdown-title"><span class="title">python</span> <span class="arrow down"></span></button> <button type="button" aria-label="python" class="mobile-dropdown-title"><span class="title">python</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Python入门
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  基础
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Django
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  RestFramework
+</a></li></ul></li><li class="dropdown-item"><h4>
+          爬虫
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  基础
+</a></li><li class="dropdown-subitem"><a href="/notepress/03 python/" class="nav-link">
+  框架
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="数据库" class="dropdown-title"><span class="title">数据库</span> <span class="arrow down"></span></button> <button type="button" aria-label="数据库" class="mobile-dropdown-title"><span class="title">数据库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/notepress/js/" class="nav-link">
+  MySql
+</a></li><li class="dropdown-item"><!----> <a href="/notepress/python/" class="nav-link">
+  MongoDB
+</a></li></ul></div></div><div class="nav-item"><a href="https://google.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  External
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="创建数组"><a href="#创建数组" class="header-anchor">#</a> 创建数组</h2> <ul><li><p>方式一</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = new Array();
+var arr2 = new Array(10,20,30);
+arr2 = new Array(10);       #这种表示的是创建长度为10的数组，此时表示的就不是数组的元素是10了
+</code></pre></div></li> <li><p>方式二</p> <div class="language- extra-class"><pre class="language-text"><code>var arr = [];
+var arr = [1,2,3,4,5,10];
+</code></pre></div></li></ul> <h3 id="读取-添加元素"><a href="#读取-添加元素" class="header-anchor">#</a> 读取/添加元素</h3> <div class="language- extra-class"><pre class="language-text"><code>arr[0] = 10;
+arr[1] = 33;
+arr[arr.length] = 123;                #向数组的末尾位置添加元素
+
+arr.hello = &quot;abc&quot;;    #这样也能写，但是没有意义了，相当于是添加了一个hello的属性（数组也是一个对象，对象能做的事情他都能做）
+</code></pre></div><h3 id="length"><a href="#length" class="header-anchor">#</a> length</h3> <div class="language- extra-class"><pre class="language-text"><code>arr.length                #对于连续的数组，使用length可以获取到数组的长度（元素的个数），
+	#arr[10] = 100;  但是对于非连续的数组，使用length会获取到数组的最大的索引+1；
+
+修改length:
+	如果修改的length大于原长度，则多出部分会空出来
+	如果修改的length小于原长度，则多出的元素会被删除，arr.length = 10;		
+</code></pre></div><h2 id="能影响原数组方法"><a href="#能影响原数组方法" class="header-anchor">#</a> 能影响原数组方法</h2> <div class="language- extra-class"><pre class="language-text"><code>能影响原数组的方法：push/pop/shift/unshift/splice/sort/reverse
+</code></pre></div><h2 id="循环列表"><a href="#循环列表" class="header-anchor">#</a> 循环列表</h2> <div class="language- extra-class"><pre class="language-text"><code>aa=[11,22,33,44,55]
+
+for (var i = 0;i &lt; aa.length;i++ ){console.log(aa[i])}    #需要先定义i=0，循环完成后i的值为6
+</code></pre></div><h2 id="for-in"><a href="#for-in" class="header-anchor">#</a> for...in</h2> <div class="language- extra-class"><pre class="language-text"><code>for (var i in aa){console.log(i)}        #输出的结果为列表的索引值，输出结果为'4'
+</code></pre></div><h2 id="for-of"><a href="#for-of" class="header-anchor">#</a> for...of</h2> <div class="language- extra-class"><pre class="language-text"><code>for (var i of aa){console.log(i)}        #输出结果为列表中的值，循环完成后i的值为55
+</code></pre></div><h2 id="判断列表是否包含某值"><a href="#判断列表是否包含某值" class="header-anchor">#</a> 判断列表是否包含某值</h2> <ul><li><p>includes方法</p> <div class="language- extra-class"><pre class="language-text"><code>if (aa.includes(22)) { console.log('true') }    #不仅适用于判断list是否包含特定元素，也适用于判断字符串中是否包含特定字符
+</code></pre></div></li> <li><p>indexOf方法</p> <div class="language- extra-class"><pre class="language-text"><code>if(aa.indexOf(22) !== -1) {console.log('true')}    #不仅适用于判断list是否包含特定元素，也适用于判断字符串中是否包含特定字符
+</code></pre></div></li> <li><p>判读是否包含空时：数组和字符串的区别</p> <div class="language- extra-class"><pre class="language-text"><code>[11,22,33,44,55].indexOf('')                #数组判断的时候为false，不包含
+'abc'.includes('')            #字符串判断的时候为true，包含
+</code></pre></div></li></ul> <h2 id="push"><a href="#push" class="header-anchor">#</a> push</h2> <div class="language- extra-class"><pre class="language-text"><code>#向数组的末尾添加一个或多个元素，并返回数组的新的长度
+
+arr.push(&quot;唐僧&quot;,&quot;蜘蛛精&quot;,&quot;白骨精&quot;,&quot;玉兔精&quot;);
+</code></pre></div><h2 id="pop"><a href="#pop" class="header-anchor">#</a> pop</h2> <div class="language- extra-class"><pre class="language-text"><code>#该方法可以删除数组的最后一个元素,并将被删除的元素作为返回值返回
+
+arr.pop();
+</code></pre></div><h2 id="unshift"><a href="#unshift" class="header-anchor">#</a> unshift</h2> <div class="language- extra-class"><pre class="language-text"><code>#向数组开头添加一个或多个元素，并返回新的数组长度
+
+arr.unshift(&quot;唐僧&quot;);
+</code></pre></div><h2 id="shift"><a href="#shift" class="header-anchor">#</a> shift</h2> <div class="language- extra-class"><pre class="language-text"><code>#可以删除数组的第一个元素，并将被删除的元素作为返回值返回
+
+arr.shift();
+</code></pre></div><h2 id="filter"><a href="#filter" class="header-anchor">#</a> filter</h2> <blockquote><p>filter过滤不影响原数组，而是返回一个新的数组！！！！！！！</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>alreadyFinishCount() {
+    return this.todolist.filter((item) =&gt; item.status == true).length;
+}
+
+#此处可以改为：this.todolist.filter((item) =&gt; item.status).length;
+</code></pre></div><h2 id="foreach"><a href="#foreach" class="header-anchor">#</a> forEach</h2> <div class="language- extra-class"><pre class="language-text"><code>arr.forEach((正在遍历的元素,正在遍历元素的索引,正在遍历的数组)=&gt;{...})
+
+arr.forEach(function(value, index, totalObj){		#forEach
+	console.log(value);
+});
+</code></pre></div><h2 id="slice"><a href="#slice" class="header-anchor">#</a> slice</h2> <div class="language- extra-class"><pre class="language-text"><code>#可以用来从数组提取指定元素; 该方法不会改变原数组，而是将截取到的元素封装到一个新数组中返回
+
+arr.slice(1,4);             #包含开始索引元素，不包含结束位置的索引元素
+arr.slice(3);               #从3开始的所有元素
+arr.slice(1,-2);            #-1 倒数第一个，-2 倒数第二个
+</code></pre></div><h2 id="splice"><a href="#splice" class="header-anchor">#</a> splice</h2> <div class="language- extra-class"><pre class="language-text"><code>#使用splice()会影响到原数组，会将指定元素从原数组中删除，并将被删除的元素作为返回值返回
+
+arr.splice(3,0,&quot;牛魔王&quot;,&quot;铁扇公主&quot;,&quot;红孩儿&quot;);
+</code></pre></div><h2 id="some"><a href="#some" class="header-anchor">#</a> some</h2> <h2 id="every"><a href="#every" class="header-anchor">#</a> every</h2> <h2 id="map"><a href="#map" class="header-anchor">#</a> map</h2> <h2 id="concat"><a href="#concat" class="header-anchor">#</a> concat</h2> <div class="language- extra-class"><pre class="language-text"><code>#可以连接两个或多个数组，并将新的数组返回；	该方法不会对原数组产生影响
+
+arr.concat(arr2,arr3,&quot;牛魔王&quot;,&quot;铁扇公主&quot;);
+
+
+#注意：[1,2,3] + [4,5]  结果为：'1,2,34,5'
+[...[1,2,3],...[4,5]]		#还可以用这种ES6中的方法
+</code></pre></div><h2 id="join"><a href="#join" class="header-anchor">#</a> join</h2> <div class="language- extra-class"><pre class="language-text"><code>#该方法可以将数组转换为一个字符串
+#在join()中可以指定一个字符串作为参数，这个字符串将会成为数组中元素的连接符;如果不指定连接符，则默认使用,作为连接符
+
+arr.join(&quot;@-@&quot;)
+</code></pre></div><h2 id="reverse"><a href="#reverse" class="header-anchor">#</a> reverse</h2> <div class="language- extra-class"><pre class="language-text"><code>#该方法会直接修改原数组
+
+arr.reverse();
+</code></pre></div><h2 id="sort"><a href="#sort" class="header-anchor">#</a> sort</h2> <blockquote><p>会影响原数组</p></blockquote> <div class="language- extra-class"><pre class="language-text"><code>升序：aa.sort((a,b)=&gt;a-b)
+降序：aa.sort((a,b)=&gt;b-a)
+</code></pre></div><h2 id="reduce"><a href="#reduce" class="header-anchor">#</a> reduce</h2> <div class="language- extra-class"><pre class="language-text"><code>const todos = {
+	{ todo: &quot;奔驰&quot;, flag: true },
+	{ todo: &quot;奥迪&quot;, flag: false },
+    { todo: &quot;宝马&quot;, flag: true }
+}
+todos.reduce((pre, todo,index) =&gt; pre + (todo.flag ? 1 : 0), 0)
+</code></pre></div><h2 id="类数组-list数组"><a href="#类数组-list数组" class="header-anchor">#</a> 类数组 =&gt; list数组</h2> <ul><li><p>方式一：Array.from()方法</p> <div class="language- extra-class"><pre class="language-text"><code>let allSpan = document.getElementsByClassName('menuSpan')    #此时allSpan是类list列表
+	#此时 allSpan.forEach(item=&gt;{}) 此时会报错 allSpan.forEach is not a function
+
+Array.from(allSpan).forEach(element =&gt; {...});	#Array.from(allSpan)转换下就可以了
+</code></pre></div></li> <li><p>方式二： ...[xx]方法</p></li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/notepress/assets/js/app.8b83ab89.js" defer></script><script src="/notepress/assets/js/2.8fb8c9b4.js" defer></script><script src="/notepress/assets/js/16.e1b879ab.js" defer></script>
+  </body>
+</html>
