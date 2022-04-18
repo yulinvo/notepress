@@ -5,8 +5,8 @@ const nav_sql = require('./01 nav/04 sql')
 const sidebar_vue3_ts_config = require('./02 sidebar/web前端/vue3_ts_config')
 
 module.exports = {
+    base: "/notepress/",
     themeConfig: {
-        base: "/notepress/",
         logo: '/images/logo.png',
         nav: [{
                 text: 'Home',
